@@ -5,7 +5,6 @@ html{
     position: absolute;
     top: 20%;
     left: 30%;
-    z-index: -1;
     background-color: hsla(214, 17%, 84%, 0.185);
 }
 .new_product{
@@ -20,26 +19,35 @@ html{
     
 }
 
-div[id=prod] section[class=parent] p{
+#slider{
     font-size: 4rem;
-    position: relative;
-
 }
 
-.one{
-    top: -16rem;
-    left:-15rem;
+#prev{
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: 10rem;
+    left: -0.5rem;
+    user-select: none;
 }
 #prev:hover{
-    background-color: red;
+    color: red;
+    cursor: pointer;
+}
+#next{
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: 10rem;
+    left: 28.7rem;
+    user-select: none;
 }
 #next:hover{
-    background-color: red;
+    color: red;
+    cursor: pointer;
 }
-.two{
-    top: -24rem;
-    left: 15rem;
-}
+
 .order{
     padding-top: 15rem;
 }

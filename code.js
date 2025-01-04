@@ -7,25 +7,33 @@ let next = document.getElementById('next')
 let shoe = document.getElementById('shoePic')
 
 
-let images = ["images/product back.webp","images/product front.webp"]
+let images = ["images/product side.png","images/product back.webp","images/product front.webp"]
 let count = 0;
-let item = images[count]
+let item;
+shoe.src = images[0];
 
 previous.onclick= function(){
     count-=1;
+
     if(count<0){
-        count=0;
+        count=images.length-1;
     }
+    item = images[count]
     shoe.src = item
+    console.log(count);
+
 }
 next.onclick=function(){
     count+=1;
+
     if(count>images.length-1){
-        count=images.length-1;
+        count=0;
     }
+    item = images[count]
     shoe.src = item
+    console.log(count);
+
 }
-console.log(images.length);
 
 function see(){
 product.classList.remove("hide")

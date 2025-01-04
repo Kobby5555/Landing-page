@@ -11,16 +11,18 @@
 <hr>
 <body>
     <div>
-        <img src="https://blob.sololearn.com/courses/np.png">
-        <a href="#">
+        <img  src="https://blob.sololearn.com/courses/np.png">
+        <a href="#" >
             <h1 onclick="see()" id="link">Click to view</h1>
         </a>
-        <div class="hide" id="prod">
+        <div  id="prod" class="hide">
             <section class="parent">
                 <img src="images/new project.jpeg" alt="new product" class="new_product">
-                <img src="images/product side.png" alt="show" class="shoe" id="shoePic">
-                <p class="one" id="prev"><</p>
-                <p class="two" id="next">></p>
+                <img src="" alt="show" class="shoe" id="shoePic">
+                <div id="slider">
+                <p  id="prev">&#9664;</p>
+                <p  id="next">&#9654;</p>
+                </div>
             </section>
     <section class="info">
         <p>Introducing the:
@@ -40,7 +42,7 @@
     </section>
     
     <span><h1 class="order">Order Now!!!</h1></span>
-    <form action="POST">
+    <form action="POST" class="hide">
         <label for="size">Size:</label>
         <select name="size" id="size">
             <option value="extra_small">Extra-small</option>
