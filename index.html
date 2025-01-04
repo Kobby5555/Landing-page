@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Product</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="images/new project.jpeg">
+</head>
+<h1>New Awesome Product</h1>
+<hr>
+<body>
+    <div>
+        <img src="https://blob.sololearn.com/courses/np.png">
+        <a href="#">
+            <h1 onclick="see()" id="link">Click to view</h1>
+        </a>
+        <div class="hide" id="prod">
+            <section class="parent">
+                <img src="images/new project.jpeg" alt="new product" class="new_product">
+                <img src="images/product side.png" alt="show" class="shoe" id="shoePic">
+                <p class="one" id="prev"><</p>
+                <p class="two" id="next">></p>
+            </section>
+    <section class="info">
+        <p>Introducing the:
+        <h2>BLUE K. SHOE.20</h2>
+        </p>
+        <section>
+            <dl>
+                <dt>It's
+                    <dd>
+                        <li>Durable</li>
+                        <li>Comfy</li>
+                        <li>Simple</li>
+                </dd>
+                </dt>
+            </dl>
+        </section>
+    </section>
+    
+    <span><h1 class="order">Order Now!!!</h1></span>
+    <form action="POST">
+        <label for="size">Size:</label>
+        <select name="size" id="size">
+            <option value="extra_small">Extra-small</option>
+            <option value="small">Small</option>
+            <option value="large">Large</option>
+            <option value="extra_large">Extra-large</option>
+        </select>
+        <br>
+        <br>
+        <label for="name">Name: </label>
+        <input type="text" id="name">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email">
+<br>
+        <button type="submit">Submit</button>
+        
+    </form>
+        </div>
+    </div>
+</body>
+<script src="code.js"></script>
+</html>
